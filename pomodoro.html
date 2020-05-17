@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pomodoro Timer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pomodoro.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="pomodoro1.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>   
+        
+        <main>
+          <section>
+                <div id="float-box">
+                    <div class = pomodoroForm>
+                        <form>
+                            <label for="ptimer">How many minutes will you be working?</label><br>
+                            <input type="number" id="ptime" name="ptime"><br>
+                            <input class="myButton" type="button" id="startPomodoro" value="Start!">
+                        </form>
+                    </div>
+
+                    <div id="buttons">
+                        <input class="myButton" type="button" id="startStudy" value="Study">
+                        <input class="myButton"type="button" id="startBreak" value="Break">
+                    </div>
+
+                    <div id="timerLocation">
+                        <span id="breakstudy"></span>
+                        <br>
+                        <span id="time">00:00</span>
+                    </div>
+
+                    <div id = "blocksLocation">
+                        <span id= blocksRemaining>0</span>
+                        <div>
+                            Blocks remaining!
+                            <i class="fas fa-search fa-xs blockstip">
+                                <span class="blockstiptext">Pomodoro has 2 types of blocks- 25 min work/ 5 min break; 25 min work/15 min break. This timer uses four 30 minute blocks and then uses 40 minute blocks</span>
+                            </i>
+                        </div>
+                            
+                        </div>
+                    </div>
+                </div>
+          </section>
+        </main>
+    </body>
+</html>

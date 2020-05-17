@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color: gainsboro;
+    font-family: 'Roboto', sans-serif;
+  }
+
+#float-box{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+    height: 60px;
+    text-align: center;
+    max-width: 600px;
+    display: grid;
+    background-color: ghostwhite;
+    padding: 10px;  
+    transition: height 0.4s linear;
+    justify-items: center;
+    position: sticky;
+}
+#float-box.expanded{
+  height: 300px;
+}
+
+#startBreak{
+  visibility: hidden;
+}
+
+#startStudy{
+  visibility: hidden;
+}
+@font-face{
+  font-family: sevenSegment;
+  src: url(seven-segment.ttf);
+}
+#time{
+  font-family: sevenSegment;
+  font-size: 4em;
+  color: #969696;
+}
+#buttons{
+  position: relative;
+  display: table; 
+}
+
+#timerLocation{
+  width: 75%;
+  visibility: hidden;
+  position: relative;
+  display: grid;
+}
+
+#blocksLocation{
+  visibility: hidden;
+  position: relative;
+  display: grid;
+  padding: 20px;
+  width: 75%;
+}
+.myButton {
+	background: #969696;
+	background-color:#ededed;
+	border-radius:3px;
+	border:1px solid #000000;
+  display:inline-block;
+  margin-top: 3px;
+	color:#000000;
+	font-size:16px;
+}
+.pomodoroForm{
+  visibility: visible; 
+}
+
+#pomodoroTitle{
+  border-bottom: 3px solid ;
+  color: #969696;
+}
+
+#blocksRemaining{
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.blockstip {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.blockstip .blockstiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(170, 170, 165);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.blockstip:hover .blockstiptext {
+  visibility: visible;
+}
